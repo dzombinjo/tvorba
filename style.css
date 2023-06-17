@@ -7,13 +7,15 @@
 }
 html,
 body {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  place-items: center;
+  align-items: center;
   background: #0069d9;
   font-family: "Lato", sans-serif;
 }
 .main {
+  margin-top: 40%;
   text-align: center;
 }
 .wrapper {
@@ -161,4 +163,28 @@ input {
 input:focus {
   outline-color: #0069d9;
   border-color: #16437e;
+}
+#textbox {
+  color: #fff;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+      "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+      "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width:320px){
+  .main{
+    margin-top: 70%;
+  }
+  .wrapper{
+    width: 280px;
+    font-size: 20px;
+  }
+  .wrapper .option{
+    width: 120px;
+    font-size: 10px;
+  }
 }
